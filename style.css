@@ -1,0 +1,33 @@
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+.wrap {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  overflow: hidden;
+}
+svg {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+path {
+  fill: none;
+  stroke: #4F9D7A;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 11;
+  stroke-dasharray: 0 400;
+  animation: draw 5s linear infinite;
+}
+@keyframes draw {
+  50% {
+    stroke-dasharray: 400 0;
+  }
+}
